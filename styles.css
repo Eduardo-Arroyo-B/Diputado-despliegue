@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el ancho total */
+}
+
+/* Estilos generales */
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+/*search container*/
+.buscador {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #2e2e2e;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra en los bordes */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 0 0 20px 20px; /* Bordes inferiores redondeados */
+    position: relative; /* Permite el uso de z-index */
+    z-index: 2; /* Asegura que este contenedor esté por encima del segundo */
+}
+
+.search-box {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 18px;
+    width: 40%; /* Ajustar el ancho */
+}
+
+.icon-container {           /*global para iconos*/
+    display: flex;
+    gap: 10px;
+}
+
+.icon {                     /*global para iconos*/
+    width: 24px;
+    height: 24px;
+}
+/*search container*/
+
+/* barra2 */
+.barra2 {
+    border-radius: 0 0 25px 25px; /* Bordes inferiores redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra en los bordes */
+    overflow: hidden; /* Asegura que los bordes redondeados se apliquen a los hijos */
+    z-index: 1;
+}
+
+
+.image-barra {
+    display: flex; /* Utiliza Flexbox para alinear los elementos */
+    justify-content: space-between; /* Asegura que los elementos se distribuyan uniformemente */
+    align-items: center; /* Centra verticalmente los elementos */
+    width: 100%; /* Asegura que el contenedor ocupe el 100% del ancho disponible */
+    padding: 10px; /* Espaciado interno opcional */
+    text-align: center;
+    font-weight: bold;     /* Negrita */
+    font-size: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.img1 {
+    max-width: 15%; /* Asegura que las imágenes no se desborden */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    flex: 1; /* Permite que las imágenes ocupen el mismo espacio */
+}
+
+.h1-barra {
+    flex: 1; /* Permite que el texto ocupe el mismo espacio que las imágenes */
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: 0; /* Elimina el margen predeterminado */
+}
+/* barra2 done*/
+
+/* img-g */
+.img-g-con{
+    background-image: url('./img/pba,sec2.jpg'); /* Establece la imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+}
+.img-g {
+    display: flex; /* Utiliza Flexbox para centrar el contenido */
+    flex-direction: column; /* Alinea los elementos en columna */
+    align-items: center; /* Centra horizontalmente los elementos */
+    justify-content: center; /* Centra verticalmente los elementos */
+    text-align: center; /* Asegura que el texto esté centrado */
+    height: 70vh; /* Toma el 50% de la altura de la ventana */
+    width: 100%; /* Asegura que el contenedor ocupe el 100% del ancho */
+    color: #ffffff;
+    font-size: 2rem;
+    z-index: 0;
+    filter: white;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #630606; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin bordes */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra en los bordes */
+    margin-top: 300px;
+}
+
+/* Estilos de galería de imágenes */
+/* Estilo para la galería de imágenes */
+.image-gallery {
+    display: flex;
+    justify-content: space-between; /* Espacio igual entre las imágenes */
+    align-items: center;
+    height: 70vh; /* El contenedor ocupará el 70% de la altura disponible */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 10px; /* Añadir un poco de padding alrededor */
+}
+
+.image-card {
+    flex: 1; /* Cada tarjeta ocupará una porción igual del espacio */
+    margin: 10px 10px; /* Espacio entre cada imagen */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-card figure {
+    margin: 0;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 100%;
+    height: auto; /* Para que la imagen mantenga su proporción */
+    max-height: 70%; /* Limita la altura de la imagen al 70% del contenedor */
+    object-fit: cover; /* Para que las imágenes cubran el área disponible */
+    border-radius: 10px;
+}
+
+figcaption {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+
+/* Estilos de columnas */
+/* Estilo general para el contenedor */
+.con-fila {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 90%;
+}
+
+/* Columna 1 */
+.column1 {
+    width: 20%; /* Ajustar según tus necesidades */
+    position: relative;
+    background-color: #2e2e2e;
+    padding-top: 100px;
+}
+
+.horizontal-text {
+    writing-mode: vertical-rl; /* Texto en vertical de abajo hacia arriba */
+    text-align: right;
+    padding-right: 10px; /* Espacio de 10px del borde */
+    padding-bottom: 10px;
+    color: white;          /* Color del texto */
+    font-weight: bold;     /* Negrita */
+    font-size: 18px;       /* Tamaño de fuente de 16px */
+    transform: rotate(180deg);
+    padding-right: 100px;
+}
+
+.column2 {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    width: 100%;            /* Asegura que la columna ocupe todo el ancho disponible */
+}
+
+.text-row {
+    display: flex;               /* Para alinear el texto y el icono horizontalmente */
+    justify-content: space-between; /* Espacio entre el texto y el icono */
+    align-items: center;        /* Centra verticalmente el contenido */
+    font-size: 18px;           /* Tamaño de fuente más grande */
+    height: 55px;              /* Altura mínima para cada fila */
+    width: 100%;               /* Hace que cada fila ocupe el 100% del ancho disponible */
+    box-sizing: border-box;    /* Incluye el padding y el borde en el ancho total */
+    color: #ffff;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+/* Estilo para el texto dentro de cada fila */
+.text {
+    text-align: left;
+    font-size: 18px; /* Tamaño del texto */
+    flex: 1; /* Toma todo el espacio disponible antes del icono */
+}
+
+
+/* Estilos del carrusel */.carousel {
+    position: relative;
+    width: 70%; /* Ajusta según sea necesario */
+    margin: auto;
+    overflow: hidden; /* Oculta el desbordamiento */
+}
+
+.carousel-container {
+    display: flex; /* Utiliza flexbox para el desplazamiento horizontal */
+    transition: transform 0.5s ease; /* Transición suave */
+}
+
+.carousel-slide {
+    min-width: 100%; /* Cada slide ocupa el 100% del contenedor */
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+    margin-block: 250px;
+}
+
+.ci {
+    width: 100%; /* Ajusta la imagen al 100% del contenedor */
+    border-radius: 15px; /* Bordes redondeados */
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 20px;
+    z-index: 1000; /* Asegúrate de que los botones estén por encima */
+    background-color: #ffffff00;
+    color: #ffffff;
+}
+
+.prev {
+    left: 10px; /* Ajusta la posición izquierda */
+}
+
+.next {
+    right: 10px; /* Ajusta la posición derecha */
+}
+
+.img-bot {
+    width: 100%; /* Hace que el contenedor ocupe el 100% del ancho disponible */
+    overflow: hidden; /* Evita que el contenido desborde el contenedor */
+    z-index: 1;
+}
+
+.img-bot img {
+    width: 100%; /* Hace que la imagen ocupe el 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina el espacio en blanco debajo de la imagen */
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.foo {
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en una columna */
+    align-items: center; /* Centra horizontalmente los elementos */
+    text-align: center; /* Centra el texto dentro de los elementos */
+    background-color: #2e2e2e;
+    padding-top: 10px;
+    color: #ffff;
+    padding: 50px;
+    z-index: 0;
+}
+
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .search-container {
+        flex-direction: column;
+    }
+
+    .search-box {
+        width: 100%; /* Asegura que el input ocupa todo el ancho */
+    }
+
+    .image-gallery {
+        flex-direction: column;
+    }
+
+    .container {
+        flex-direction: column; /* Colocar columnas en vertical */
+    }
+}
